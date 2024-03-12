@@ -22,14 +22,21 @@
 
 ## Tech stack used
 - Frontend
-- React & Typescript and Adobe React spectrum for the thumbsup and down icons
+  - React & Typescript and Adobe React spectrum for the thumbsup and down icons
 - Backend
-- Node, express, typescript and jest and supertest for tests
+  - Node, express, typescript and jest and supertest for tests
 
 ## Design
 
 ### Frontend
+<img width="1716" alt="Screenshot 2024-03-11 at 6 13 52 PM" src="https://github.com/piyusman1/est_takehome/assets/21041950/bc0b6b9e-57d2-4964-a146-1778ae6b3850">
+12 hardcoded images with thumbs up and down button for each images with the count
 
+### Backend 
+
+Three apis: 
+- One to fetch all images
+- other two to update the thumbsup and down count
 
 ### List of available APIs
 
