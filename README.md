@@ -37,6 +37,7 @@
 Three apis: 
 - One to fetch all images
 - other two to update the thumbsup and down count
+- No database used only a list objects
 
 ### List of available APIs
 
