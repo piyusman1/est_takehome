@@ -1,7 +1,8 @@
 ## Running the App
 - Install Docker
-- `docker compose up`
-- `docker compose build`
+- `docker-compose build`
+- `docker-compose up`
+
 - Go to http://localhost:3000
 - (If want to access backend) Go to http://localhost:5000/images
 
