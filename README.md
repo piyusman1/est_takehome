@@ -22,7 +22,7 @@
 - Taken help from google for css grid `grid-template-columns: repeat(4, 1fr);` to keep 4 images in one row
 
 ## Assumptions
-###for route localhost:3000/unlimited (Multiple clicks per image)
+### for route localhost:3000/unlimited (Multiple clicks per image)
 - User can click multiple times on thumbs up and thumbs down buttons.
 - App will keep the count of it and keep tracking it.
 - When the browser is refreshed the count is still there for a new user since the count is updated in the backend.
@@ -44,6 +44,7 @@
 ## Design
 
 ### Frontend
+<img width="1710" alt="Screenshot 2024-03-11 at 8 26 10 PM" src="https://github.com/piyusman1/est_takehome/assets/21041950/67191c91-63b7-4743-9433-a5000a0a4bb3">
 
 ### Backend
 
