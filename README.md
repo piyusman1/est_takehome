@@ -5,6 +5,13 @@
 - Go to http://localhost:3000
 - (If want to access backend) Go to http://localhost:5000/images
 
+- Go to http://localhost:3000/unlimited 
+- In above user can do multiple clicks or reaction to an image
+
+- Go to http://localhost:3000 or http://localhost:3000/images 
+- In above user can do one click at a time. If user gives one reaction, he or she can only do other reaction but cannot do multiple reactions.
+
+
 ## Notes and Citations
 - Used http://placehold.it/ to generate dummy images with only texts
 - Have taken help from medium.com for docker-compose yaml files syntax
@@ -22,21 +29,14 @@
 
 ## Tech stack used
 - Frontend
-  - React & Typescript and Adobe React spectrum for the thumbsup and down icons
+- React & Typescript and Adobe React spectrum for the thumbsup and down icons
 - Backend
-  - Node, express, typescript and jest and supertest for tests
+- Node, express, typescript and jest and supertest for tests
 
 ## Design
 
 ### Frontend
-<img width="1716" alt="Screenshot 2024-03-11 at 6 13 52 PM" src="https://github.com/piyusman1/est_takehome/assets/21041950/bc0b6b9e-57d2-4964-a146-1778ae6b3850">
-12 hardcoded images with thumbs up and down button for each images with the count
 
-### Backend 
-
-Three apis: 
-- One to fetch all images
-- other two to update the thumbsup and down count
 
 ### List of available APIs
 
@@ -45,6 +45,3 @@ API | Description
 `GET /images` | Fetches all images with it's metadata
 `PUT /images/thumbs-up/:id` | Update the thumbs up count
 `PUT /images/thumbs-down/:id` | Update the thumbs down count
-
-
-

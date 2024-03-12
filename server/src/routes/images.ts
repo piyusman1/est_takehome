@@ -78,10 +78,14 @@ router.get('/images', (req : Request, res : Response) => {
 
 router.put('/thumbs-up/:id', (req : Request, res : Response) => {
     const imageId = parseInt(req.params.id);
+    const alreadyReacted = req.query.alreadyReacted === "true";
     const image = images.find((img) => img.id === imageId);
     if (image) {
         image.thumbsUp++;
-        res.json({success: true, thumbsUp: image.thumbsUp});
+      if(alreadyReacted) {
+        image.thumbsDown--;
+      }
+        res.json({success: true, thumbsUp: image.thumbsUp, thumbsDown: image.thumbsDown});
     } else {
         res
             .status(404)
@@ -91,11 +95,15 @@ router.put('/thumbs-up/:id', (req : Request, res : Response) => {
 
 router.put('/thumbs-down/:id', (req : Request, res : Response) => {
     const imageId = parseInt(req.params.id);
+    const alreadyReacted = req.query.alreadyReacted === "true";
     //As I am not using DB I am going to find it from the list which I created above
     const image = images.find((img) => img.id === imageId);
     if (image) {
         image.thumbsDown++;
-        res.json({success: true, thumbsDown: image.thumbsDown});
+        if(alreadyReacted) {
+          image.thumbsUp--;
+        }
+        res.json({success: true, thumbsDown: image.thumbsDown, thumbsUp: image.thumbsUp});
     } else {
         res
             .status(404)
